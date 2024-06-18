@@ -59,7 +59,7 @@ function hideModal() {
 
 function toggleTrocoField() {
     const paymentMethod = document.getElementById('payment-method').value;
-    document.getElementById('troco-container').style.display = paymentMethod === 'dinheiro' ? 'block' : 'none';
+    document.getElementById('troco-container').style.display = paymentMethod === 'cash' ? 'block' : 'none';
 }
 
 function toggleAddressFields() {
@@ -74,7 +74,7 @@ function finalizeOrder() {
     const address = document.getElementById('address').value;
     const district = document.getElementById('district').value;
     const paymentMethod = document.getElementById('payment-method').value;
-    const troco = paymentMethod === 'Dinheiro' ? document.getElementById('troco').value : 'N/A';
+    const troco = paymentMethod === 'cash' ? document.getElementById('troco').value : 'N/A';
 
     const deliveryMethod = document.querySelector('input[name="delivery-method"]:checked').value;
     const isDelivery = deliveryMethod === 'delivery';

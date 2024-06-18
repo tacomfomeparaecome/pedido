@@ -59,7 +59,7 @@ function hideModal() {
 
 function toggleTrocoField() {
     const paymentMethod = document.getElementById('payment-method').value;
-    document.getElementById('troco-container').style.display = paymentMethod === 'cash' ? 'block' : 'none';
+    document.getElementById('troco-container').style.display = paymentMethod === 'dinheiro' ? 'block' : 'none';
 }
 
 function toggleAddressFields() {

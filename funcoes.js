@@ -74,7 +74,7 @@ function finalizeOrder() {
     const address = document.getElementById('address').value;
     const district = document.getElementById('district').value;
     const paymentMethod = document.getElementById('payment-method').value;
-    const troco = paymentMethod === 'cash' ? document.getElementById('troco').value : 'N/A';
+    const troco = paymentMethod === 'Dinheiro' ? document.getElementById('troco').value : 'N/A';
 
     const deliveryMethod = document.querySelector('input[name="delivery-method"]:checked').value;
     const isDelivery = deliveryMethod === 'delivery';

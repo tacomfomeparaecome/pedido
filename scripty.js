@@ -1,5 +1,5 @@
 let cart = [];
-const deliveryFee = 3.50; // Modifique a taxa de entrega aqui
+const deliveryFee = 4.00; // Modifique a taxa de entrega aqui
 
 function showCustomizationInput(itemId, itemName, itemPrice) {
     const quantity = prompt("Quantas unidades deseja?");

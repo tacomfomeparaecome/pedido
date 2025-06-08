@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ta Com Fome? Para e Come!</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="scrypt.js" ></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Figura1-transformed.png" alt="Logo">
+           <h1 class="logo-title">Ta Com Fome? 
+            Para e Come!</h1>
+        </div>
+     
+    </header>
+    <div class="container">
+      
+
+        <div class="menu-section">
+            <h1>Hamburguer</h1>
+         
+            <div class="menu-item">
+                <h3>Vegetariano</h3>
+                <img src="burger1.png" alt="Item 1">
+                <p>Pão, Mussarela, Ovo, Milho, Batata, Alface, Tomate </p>
+                <p class="price">R$12.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item1', 'Vegetariano', 11.50)">Adicionar ao Carrinho</button>
+            </div>
+        
+            <div class="menu-item">
+                <h3>Misto</h3>
+                <img src="misto.jpg" alt="Item 2">
+                <p>Pão, Presunto, Mussarela</p>
+                <p class="price">R$12.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item2', ' Misto', 12.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Hamburguer</h3>
+                <img src="burger3.png" alt="Item 3">
+                <p>Pão, Bife , Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$12.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item3', 'Hamburguer', 12.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Egg Burguer</h3>
+                <img src="burger4.png" alt="Item 4">
+                <p>Pão, Bife , Ovo, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$15.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item4', 'Egg Burguer', 15.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Bacon Burguer</h3>
+                <img src="burger1.png" alt="Item 5">
+                <p>Pão, Bife , Bacon, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$15.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item5', 'Bacon Burguer', 15.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Bacon Burguesunto</h3>
+                <img src="burger2.png" alt="Item 6">
+                <p>Pão, Bife , Bacon, Presunto, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$17.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item6', 'Bacon Burguesento', 17.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>X Burguer</h3>
+                <img src="burger3.png" alt="Item 7">
+                <p>Pão, Bife , Mussarela, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$15.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item7', 'X Burgue', 15.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3> Burguesunto</h3>
+                <img src="burger4.png" alt="Item 8">
+                <p>Pão, Bife , Presunto, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$15.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item8', 'Burguesunto', 15.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>X Bacon</h3>
+                <img src="burger1.png" alt="Item 9">
+                <p>Pão, Bife , Mussarela,  Bacon, Presunto, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$17.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item9', 'X bacon', 17.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>X Egg </h3>
+                <img src="burger2.png" alt="Item 10">
+                <p>Pão, Bife ,Ovo, Mussarela, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$17.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item10', 'X Bacon', 17.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>X Egg Bacon</h3>
+                <img src="burger3.png" alt="Item 11">
+                <p>Pão, Bife , Ovo, Bacon, Mussarela, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$18.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item11', 'X  Egg Bacon', 18.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>X Burguesunto</h3>
+                <img src="burger4.png" alt="Item 12">
+                <p>Pão, Bife , Mussarela, Presunto, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$17.50</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item12', 'X Burguesunto', 17.50)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>X Tudo</h3>
+                <img src="burger1.png" alt="Item 13">
+                <p>Pão, Bife , Ovo, Bacon,Mussarela, Presunto, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$20.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item13', 'X Tudo', 20.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Para e Come</h3>
+                <img src="burger2.png" alt="Item 14">
+                <p>Pão, 2 Bife , 2 Ovo, 2 Bacon, 2 Mussarela, 2 Presunto, Milho, Batata, Alface, Tomate</p>
+                <p class="price">R$23.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item14', 'Para e Come', 23.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>X Fome</h3>
+                <img src="burger2.png" alt="Item 15">
+                <p>Pão, Bife , Ovo, Bacon, Mussarela, Presunto, Milho, Batata, Alface, Tomate, Currasquinho BOI, pode trocar Frango,Porco,LInguiça</p>
+                <p class="price">R$22.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item15', 'X Fome', 23.90)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="menu-section">    
+
+            <h1>Hot Dog</h1>
+            <div class="menu-item">
+                <h3>Hot Dog 1 Salsicha</h3>
+                <img src="hotdog.png" alt="Item 16">
+                <p>Pão, 1 Salsicha , Milho, Batata, Queijo Ralado, Passas, Azeitona </p>
+                <p class="price">R$11.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item16', 'Hot Dog 1 Salsicha', 11.00)">Adicionar ao Carrinho</button>
+            </div>  
+
+            <div class="menu-item">
+                <h3>Hot Dog 2 Salsicha</h3>
+                <img src="hotdog.png" alt="Item 17">
+                <p>Pão, 2 Salsicha , Milho, Batata, Queijo Ralado, Passas, Azeitona </p>
+                <p class="price">R$12.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item17', 'Hot Dog 2 Salsicha', 12.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Hot Dog de Frango</h3>
+                <img src="hotdog.png" alt="Item 18">
+                <p>Pão, 1 Salsicha , Frango Desfiado, Milho, Batata, Queijo Ralado, Passas, Azeitona </p>
+                <p class="price">R$15.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item18', 'Hot Dog Frango', 15.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Hot Dog presunto Musarela</h3>
+                <img src="hotdog.png" alt="Item 19">
+                <p>Pão, 1 Salsicha , Presunto, Musarela Milho, Batata, Queijo Ralado, Passas, Azeitona </p>
+                <p class="price">R$16.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item19', 'Hot Dog Presunto MUssarela', 16.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Hot Dog Calabreza</h3>
+                <img src="hotdog.png
+                " alt="Item 20">
+                <p>Pão, Calabreza , Milho, Batata, Queijo Ralado, Passas, Azeitona </p>
+                <p class="price">R$17.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item20', 'Hot Dog Calabreza', 17.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Tá Com Fome</h3>
+                <img src="hotdog.png" alt="Item 21">
+                <p>Pão, 2 Salsicha , 2 Presunto, 2 Mussarela Milho, Batata, Queijo Ralado, Passas, Azeitona </p>
+                <p class="price">R$19.50</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item21', 'Tá Com Fome', 19.50)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="menu-section"  > 
+
+            <h1>Mascote</h1>
+            <div class="menu-item">
+                <h3>Missericordia </h3>
+                <img src="pão.jpg" alt="Item 22">
+                <p>Pão, Carne de Boi, Cebola, Ovo, Bacon, Musssarela, Presunto, Catupiry, Milho, Batata </p>
+                <p class="price">R$16.50</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item22', 'Misericordia', 16.50)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Pepa Pig </h3>
+                <img src="pão.jpg" alt="Item 23">
+                <p>Pão, Carne de Porco, Cebola, Ovo, Bacon, Musssarela, Presunto, Catupiry, Milho, Batata </p>
+                <p class="price">R$15.50</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item23', 'Pepa Pig', 15.50)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Galinha Magricela </h3>
+                <img src="pão.jpg" alt="Item 24">
+                <p>Pão, Carne de Frango, Cebola, Ovo, Bacon, Musssarela, Presunto, Catupiry, Milho, Batata </p>
+                <p class="price">R$14.50</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item24', 'galinha Magricrla', 14.50)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Pão Com Linguça </h3>
+                <img src="pão.jpg" alt="Item 25">
+                <p>Pão, Linguiça, Cebola, Ovo, Bacon, Musssarela, Presunto, Catupiry, Milho, Batata </p>
+                <p class="price">R$14.50</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item25', 'Pão Com Linguiça', 14.50)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Covardia </h3>
+                <img src="pão.jpg" alt="Item 26">
+                <p>Pão, Linguiça, Boi, Porco, Frango, Cebola, Ovo, Bacon, Musssarela, Presunto, Catupiry, Milho, Batata </p>
+                <p class="price">R$25.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item26', 'Covardia', 25.00)">Adicionar ao Carrinho</button>
+            </div>
+        </div>
+        <div class="menu-section">       
+      
+            <h1>Espetos</h1>
+            <div class="menu-item">
+                <h3>Espeto Boi </h3>
+                <img src="espetoboi.png" alt="Item 27">
+                <p></p>
+                <p class="price">R$9.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item27', 'Espeto Boi', 9.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="menu-item">
+                <h3>Espeto Porco </h3>
+                <img src="espetoboi.png" alt="Item 28">
+                <p></p>
+                <p class="price">R$8.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item28', 'Espeto Porco', 8.00)">Adicionar ao Carrinho</button>
+            </div> 
+                <div class="menu-item">
+                <h3>Espeto Frango </h3>
+                <img src="espetoboi.png" alt="Item 29">
+                <p></p>
+                <p class="price">R$7.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item29', 'Espeto Frango', 7.00)">Adicionar ao Carrinho</button>
+            </div>
+        </div>    
+
+        <div class="menu-section">
+            <h1>Porções</h1>
+            <div class="menu-item">
+                <h3>Mista </h3>
+                <img src="carne.jpg" alt="Item 30">
+                <p>Boi, Porco, Linguiça, Cebpla, Tomate, Batata</p>
+                <p class="price">R$45.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item30', 'Porção Mista', 45.00)">Adicionar ao Carrinho</button>
+            </div>       
+            
+            <div class="menu-item">
+                <h3>Batata Com Bacon </h3>
+                <img src="bacon.jpg" alt="Item 31">
+                <p class="price">R$32.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item31', 'Batata com Bacon', 32.00)">Adicionar ao Carrinho</button>
+            </div>   
+
+            <div class="menu-item">
+                <h3>Batata Com Linguiça </h3>
+                <img src="linguiça.jpg" alt="Item 32">
+                <p></p>
+                <p class="price">R$30.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item32', 'Batata com Linguiça', 30.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">
+                <h3>Batata Com Frango e Linguiça </h3>
+                <img src="carne.jpg" alt="Item 33">
+                <p></p>
+                <p class="price">R$34.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item34', 'Batata com Frango e Lingiça', 34.00)">Adicionar ao Carrinho</button>
+            </div>  
+
+            <div class="menu-item">
+                <h3>Batata Com Boi </h3>
+                <img src="boi.jpg" alt="Item 34">
+                <p class="price">R$41.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item34', 'Batata com Bacon', 41.00)">Adicionar ao Carrinho</button>
+        
+            </div> 
+            <div class="menu-item">
+                <h3>Batata Com Frango </h3>
+                <img src="frango.jpg" alt="Item 35">
+                <p class="price">R$36.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item35', 'Batata com Bacon', 36.00)">Adicionar ao Carrinho</button>
+            </div>
+            
+            <div class="menu-item">
+                <h3>Batata </h3>
+                <img src="batata.jpg" alt="Item 36">
+                <p></p>
+                <p class="price">R$19.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item36', 'Batata ', 19.00)">Adicionar ao Carrinho</button>
+            </div>  
+        </div>
+
+        <div class="menu-section">
+            <h1>Refrigernte</h1>
+            <div class="menu-item">  
+                <h3>Coca 2 Litros </h3>
+                <img src="coaca2.png" alt="Item 37">
+                <p class="price">R$15.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item37', 'Coca 2 Litros ', 15.00)">Adicionar ao Carrinho</button>
+            </div> 
+
+            <div class="menu-item">  
+                <h3>Coca Lata </h3>
+                <img src="latacoca.png" alt="Item 38">
+                <p class="price">R$6.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item38', 'Coca Lata ', 6.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">  
+                <h3>Conty Cola 2 Litros </h3>
+                <img src="conty.png" alt="Item 39">
+                <p class="price">R$11.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item39', 'Conti Cola 2 Litros ', 11.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">  
+                <h3>Conty Cola 600 ML </h3>
+                <img src="conty600.png" alt="Item 40">
+                <p></p>
+                <p class="price">R$6.50</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item41', 'Conti Cola 600ML ', 6.50)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">  
+                <h3>Guarana Antartica 1 litro </h3>
+                <img src="guarana.png" alt="Item 42">
+                <p></p>
+                <p class="price">R$9.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item42', 'Guararana Antartica Litro ', 9.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">  
+                <h3>Guarana Antartica lata </h3>
+                <img src="guaranalata.png" alt="Item 43">
+                <p></p>
+                <p class="price">R$5.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item43', 'Guararana Antartica Lata ', 5.00)">Adicionar ao Carrinho</button>
+            </div>
+
+            <div class="menu-item">  
+                <h3>fanta Garana 2 litros </h3>
+                <img src="fanta.png" alt="Item 44">
+                <p></p>
+                <p class="price">R$12.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item44', 'Fanta Guarana 2 Litros ', 12.00)">Adicionar ao Carrinho</button>
+            </div>  
+
+            <div class="menu-item">  
+                <h3>Fanta Laranja 2 Litros </h3>
+                <img src="fanta2.png" alt="Item 45">
+                <p></p>
+                <p class="price">R$12.00</p>
+                <button class="add-to-cart-btn" onclick="showCustomizationInput('item45', 'Fanta Laranja 2 Litros ', 12.00)">Adicionar ao Carrinho</button>
+            </div>
+            <div class="menu-section">
+    <h1>Adicional</h1>
+    <div class="adicional-container">
+        <div class="adicional-item">
+            <p>Ovo</p>
+            <p class="price">R$2.00</p>
+        </div>
+        <div class="adicional-item">
+            <p>Bife</p>
+            <p class="price">R$3.00</p>
+        </div>
+        <div class="adicional-item">
+            <p>Bacon</p>
+            <p class="price">R$3.50</p>
+        </div>
+        <div class="adicional-item">
+            <p>Frango</p>
+            <p class="price">R$3.50</p>
+        </div>
+        <div class="adicional-item">
+            <p>Presunto</p>
+            <p class="price">R$3.50</p>
+        </div>
+        <div class="adicional-item">
+            <p>Salsicha</p>
+            <p class="price">R$2.00</p>
+        </div>
+        <div class="adicional-item">
+            <p>Calabreza</p>
+            <p class="price">R$3.50</p>
+        </div>
+        <div class="adicional-item">
+            <p>Catupiry</p>
+            <p class="price">R$3.50</p>
+        </div>
+        <div class="adicional-item">
+            <p>Mussarela</p>
+            <p class="price">R$3.50</p>
+        </div>
+    </div>
+     <button class="cart-button" onclick="showModal()">Finalizar Pedido</button>   
+</div> 
+
+</div>
+        
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="hideModal()">&times;</span>
+            <h2>Seu Pedido</h2>
+            <div class="cart">
+                <h3>Carrinho</h3>
+                <div id="cart-items"></div>
+                <p id="total">Total: R$0.00</p>
+                <p id="delivery-fee" style="display: none;">Taxa de Entrega: R$3.50</p>
+            </div>
+            <div class="delivery-method">
+                <h3>Método de Recebimento</h3>
+                <form id="order-form">
+                    <label>
+                        <input type="radio" name="delivery-method" value="delivery" onchange="toggleAddressFields()"> Entrega
+                    </label>
+                    <label>
+                        <input type="radio" name="delivery-method" value="pickup" onchange="toggleAddressFields()"> Retirada
+                    </label>
+                    <div id="address-container">
+                        <label for="address">Endereço:</label>
+                        <input type="text" id="address" name="address">
+                        <label for="district">Bairro:</label>
+                        <input type="text" id="district" name="district">
+                    </div>
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                    <label for="payment-method">Método de Pagamento:</label>
+                    <select id="payment-method" name="payment-method" onchange="toggleTrocoField()">
+                        <option value="card">Cartão</option>
+                        <option value="cash">Dinheiro</option>
+                        <option value="pix">Pix</option>
+                    </select>
+                    <div id="troco-container">
+                        <label for="troco">Troco para:</label>
+                        <input type="text" id="troco" name="troco">
+                    </div>
+                </form>
+            </div>
+            <div class="actions">
+                <button onclick="hideModal()">Cancelar</button>
+                <button onclick="finalizeOrder()">Confirmar Pedido</button>
+            </div>
+        </div>
+    </div>
+   
+</html>
